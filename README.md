@@ -40,24 +40,34 @@ la base de datos como si fueran objetos en Java.
   -salir.java (se encarga de enviar al usuario al index.jsp)
   
 - Package.Services
+
   Son los controladores encargados de manejar la lista de usuarios y partidas.
   
 - Package.ModeloBD
+
   Son las clases creadas con JPA a partir de la base de datos.
 
 - Javascript juego
+
   Dentro del juego se ha añadido un método ajax que permite recoger los datos que necesitamos para registrar las partidas
   y los envía a través de un post.
   
 - Base de datos
+
   He utilizado dos tablas, vinusuarios y vinpartidas, vinpartidas tiene como FK el id del usuario.
   
 - Formulario de registro
+
   A través de required y de pattern para telefono y email, valido si lo introducido es correcto, así me evito por ejemplo
   que en el campo del teléfono me puedan meter un string, de esta manera la aplicación no da error.
   
 **Puntos a Mejorar**
 - El diseño podría ser algo más bonito.
+
 - Algunos servlets arrojan directamente una respuesta HTML, se debería realizar un request dispatcher.
+
 - Algunas consultas podrían realizarse de otra manera.
+
 - Encriptación, ya que la contraseña, usuario y cookies van en texto plano.
+
+- Validación de cuenta mediante javamail.
