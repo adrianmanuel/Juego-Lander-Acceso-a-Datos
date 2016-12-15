@@ -7,7 +7,9 @@ la base de datos como si fueran objetos en Java.
 - El proyecto cuenta con los siguientes JSP:
 
   -index.jsp (es la primera página que se muestra al usuario, la cuál permite iniciar sesión o crear cuenta)
+  
   -errorregistro.jsp (en caso de que el usuario que intentamos registrar no pueda hacerlo, se muestra error)
+  
   -errorsesion.jsp (en caso de que sea erroneo el inicio de sesión sale su error)
   -iniciodesesion.jsp (carga un formulario para hacer el inicio y enviar los datos por post al servlet)
   -registro.jsp (carga un formulario para hacer el registro de una nueva cuenta y lo pasa al servlet)
