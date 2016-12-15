@@ -43,32 +43,7 @@ public class login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("GameNavePU");
-            VinusuariosJpaController vjc = new VinusuariosJpaController(emf);
-            List<Vinusuarios> ulist = vjc.findVinusuariosEntities();
-            Vinusuarios vu = new Vinusuarios();
-            String galleta;
-            int idUsuario = 0;
-            boolean comprobarUsuario = false, 
-                    comprobarPass = false;
             
-            Cookie galletas[] = request.getCookies();
-            for (Cookie cookie : galletas) {
-            galleta = cookie.getValue();
-            for (Vinusuarios vinusuarios : ulist) {
-                if (galleta.contentEquals(vinusuarios.getNombre())) {
-                    comprobarUsuario = true;
-                    idUsuario = vu.getIdUsuario();
-                    String usuario = galleta;
-                    request.setAttribute("nombreusuario", usuario);
-                }
-                if (galleta.contentEquals(vu.getContraseña())) {
-                    comprobarPass = true;
-                }
-            }
-        }
-          
-
     }
 
     /**
