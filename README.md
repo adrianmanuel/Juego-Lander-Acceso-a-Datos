@@ -60,4 +60,4 @@ la base de datos como si fueran objetos en Java.
 - El diseño podría ser algo más bonito.
 - Algunos servlets arrojan directamente una respuesta HTML, se debería realizar un request dispatcher.
 - Algunas consultas podrían realizarse de otra manera.
-  
+- Encriptación, ya que la contraseña, usuario y cookies van en texto plano.
