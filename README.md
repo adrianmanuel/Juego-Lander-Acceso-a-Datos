@@ -11,20 +11,30 @@ la base de datos como si fueran objetos en Java.
   -errorregistro.jsp (en caso de que el usuario que intentamos registrar no pueda hacerlo, se muestra error)
   
   -errorsesion.jsp (en caso de que sea erroneo el inicio de sesión sale su error)
+  
   -iniciodesesion.jsp (carga un formulario para hacer el inicio y enviar los datos por post al servlet)
+  
   -registro.jsp (carga un formulario para hacer el registro de una nueva cuenta y lo pasa al servlet)
+  
   -menu.jsp (será la página que cargará una vez se inicie sesión botones que llevan a acciones)
+  
   -juego.jsp (es la página encargada de cargar el juego)
+  
   -salir.jsp (cierra la sesión del usuario y envia a la pantalla index.jsp)
   
 - Servlets
 
   -login.java (se encarga de validar a través de la lista de usuarios si el usuario existe y guarda datos en las
   cookies del navegador)
+  
   -registrar.java (se encarga de validar el formulario de registro comprobando si no hay otro usuario igual)
+  
   -iniciar.java (se encarga de guardar los datos de la partida a través de ajax que lo envia por post)
+  
   -mispartidas.java (saca por pantalla las partidas del usuario durante el tiempo)
+  
   -top10.java (saca por pantalla las 10 mejores partidas de todos los usuarios registrados)
+  
   -salir.java (se encarga de enviar al usuario al index.jsp)
   
 - Package.Services
