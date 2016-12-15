@@ -18,9 +18,9 @@
             <div class="container2">
                 <h1>Lunar Landing</h1>
                 <h2>Panel</h2>
-                <a href="lander/iniciosesion.jsp"onclick="iniciarsesion();">Iniciar Sesión</a>
+                <a href="iniciosesion.jsp"onclick="iniciarsesion();">Iniciar Sesión</a>
                 <br>
-                <a href="lander/registro.jsp" onclick="registrar();">Registrarse</a>
+                <a href="registro.jsp" onclick="registrar();">Registrarse</a>
             </div>
         </div>
                         </body>
